@@ -22,6 +22,41 @@
 		79A73E611972F411009E5A6F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E451972F411009E5A6F /* CoreData.framework */; };
 		79A73E691972F411009E5A6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E671972F411009E5A6F /* InfoPlist.strings */; };
 		79A73E6B1972F411009E5A6F /* ExuTalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73E6A1972F411009E5A6F /* ExuTalkTests.m */; };
+		79A73E8B1972F49D009E5A6F /* aqua.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E7A1972F49D009E5A6F /* aqua.png */; };
+		79A73E8C1972F49D009E5A6F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E7B1972F49D009E5A6F /* back.png */; };
+		79A73E8D1972F49D009E5A6F /* btn_rectangle_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E7C1972F49D009E5A6F /* btn_rectangle_normal.png */; };
+		79A73E8E1972F49D009E5A6F /* btn_rectangle_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E7D1972F49D009E5A6F /* btn_rectangle_normal@2x.png */; };
+		79A73E8F1972F49D009E5A6F /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E7E1972F49D009E5A6F /* camera.png */; };
+		79A73E901972F49D009E5A6F /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E7F1972F49D009E5A6F /* camera@2x.png */; };
+		79A73E911972F49D009E5A6F /* chats.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E801972F49D009E5A6F /* chats.png */; };
+		79A73E921972F49D009E5A6F /* contacts.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E811972F49D009E5A6F /* contacts.png */; };
+		79A73E931972F49D009E5A6F /* defaultPerson.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E821972F49D009E5A6F /* defaultPerson.png */; };
+		79A73E941972F49D009E5A6F /* header_tile.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E831972F49D009E5A6F /* header_tile.png */; };
+		79A73E951972F49D009E5A6F /* horizontalDivider.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E841972F49D009E5A6F /* horizontalDivider.png */; };
+		79A73E961972F49D009E5A6F /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E851972F49D009E5A6F /* orange.png */; };
+		79A73E971972F49D009E5A6F /* send.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E861972F49D009E5A6F /* send.png */; };
+		79A73E981972F49D009E5A6F /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E871972F49D009E5A6F /* settings.png */; };
+		79A73E991972F49D009E5A6F /* messageReceived.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E891972F49D009E5A6F /* messageReceived.aiff */; };
+		79A73E9A1972F49D009E5A6F /* messageSent.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E8A1972F49D009E5A6F /* messageSent.aiff */; };
+		79A73E9E1972F4B0009E5A6F /* BaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73E9D1972F4B0009E5A6F /* BaseVC.m */; };
+		79A73EA21972F4BA009E5A6F /* ContactsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EA11972F4BA009E5A6F /* ContactsVC.m */; };
+		79A73EB31972F4CA009E5A6F /* BuddyListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EA81972F4CA009E5A6F /* BuddyListVC.m */; };
+		79A73EB41972F4CA009E5A6F /* ConversationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EAA1972F4CA009E5A6F /* ConversationVC.m */; };
+		79A73EB51972F4CA009E5A6F /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EAC1972F4CA009E5A6F /* LoginVC.m */; };
+		79A73EB61972F4CA009E5A6F /* ChatModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EAF1972F4CA009E5A6F /* ChatModel.m */; };
+		79A73EB71972F4CA009E5A6F /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EB11972F4CA009E5A6F /* LoginModel.m */; };
+		79A73EB81972F4CA009E5A6F /* StartUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A73EB21972F4CA009E5A6F /* StartUp.storyboard */; };
+		79A73EC21972F4D2009E5A6F /* ChatMessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EBB1972F4D2009E5A6F /* ChatMessageVC.m */; };
+		79A73EC31972F4D2009E5A6F /* Messaging.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A73EBC1972F4D2009E5A6F /* Messaging.storyboard */; };
+		79A73EC41972F4D2009E5A6F /* MessagingSoundEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EBE1972F4D2009E5A6F /* MessagingSoundEffect.m */; };
+		79A73EC51972F4D2009E5A6F /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EC11972F4D2009E5A6F /* MessageModel.m */; };
+		79A73ED51972F4DA009E5A6F /* SendMessageOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73EC81972F4DA009E5A6F /* SendMessageOperation.m */; };
+		79A73ED61972F4DA009E5A6F /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73ECB1972F4DA009E5A6F /* AboutVC.m */; };
+		79A73ED71972F4DA009E5A6F /* NetworkDisconnectedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73ECD1972F4DA009E5A6F /* NetworkDisconnectedVC.m */; };
+		79A73ED81972F4DA009E5A6F /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A73ECE1972F4DA009E5A6F /* Settings.storyboard */; };
+		79A73ED91972F4DA009E5A6F /* SettingsVC+Share.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73ED01972F4DA009E5A6F /* SettingsVC+Share.m */; };
+		79A73EDA1972F4DA009E5A6F /* SettingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73ED21972F4DA009E5A6F /* SettingsVC.m */; };
+		79A73EDB1972F4DA009E5A6F /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73ED41972F4DA009E5A6F /* ShareVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +88,59 @@
 		79A73E661972F411009E5A6F /* ExuTalkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExuTalkTests-Info.plist"; sourceTree = "<group>"; };
 		79A73E681972F411009E5A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79A73E6A1972F411009E5A6F /* ExuTalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExuTalkTests.m; sourceTree = "<group>"; };
+		79A73E7A1972F49D009E5A6F /* aqua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aqua.png; sourceTree = "<group>"; };
+		79A73E7B1972F49D009E5A6F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		79A73E7C1972F49D009E5A6F /* btn_rectangle_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_rectangle_normal.png; sourceTree = "<group>"; };
+		79A73E7D1972F49D009E5A6F /* btn_rectangle_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn_rectangle_normal@2x.png"; sourceTree = "<group>"; };
+		79A73E7E1972F49D009E5A6F /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		79A73E7F1972F49D009E5A6F /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		79A73E801972F49D009E5A6F /* chats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chats.png; sourceTree = "<group>"; };
+		79A73E811972F49D009E5A6F /* contacts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contacts.png; sourceTree = "<group>"; };
+		79A73E821972F49D009E5A6F /* defaultPerson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultPerson.png; sourceTree = "<group>"; };
+		79A73E831972F49D009E5A6F /* header_tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_tile.png; sourceTree = "<group>"; };
+		79A73E841972F49D009E5A6F /* horizontalDivider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = horizontalDivider.png; sourceTree = "<group>"; };
+		79A73E851972F49D009E5A6F /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
+		79A73E861972F49D009E5A6F /* send.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = send.png; sourceTree = "<group>"; };
+		79A73E871972F49D009E5A6F /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		79A73E891972F49D009E5A6F /* messageReceived.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = messageReceived.aiff; sourceTree = "<group>"; };
+		79A73E8A1972F49D009E5A6F /* messageSent.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = messageSent.aiff; sourceTree = "<group>"; };
+		79A73E9C1972F4B0009E5A6F /* BaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseVC.h; sourceTree = "<group>"; };
+		79A73E9D1972F4B0009E5A6F /* BaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseVC.m; sourceTree = "<group>"; };
+		79A73EA01972F4BA009E5A6F /* ContactsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsVC.h; sourceTree = "<group>"; };
+		79A73EA11972F4BA009E5A6F /* ContactsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsVC.m; sourceTree = "<group>"; };
+		79A73EA41972F4C2009E5A6F /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		79A73EA51972F4C2009E5A6F /* AppProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppProtocol.h; sourceTree = "<group>"; };
+		79A73EA71972F4CA009E5A6F /* BuddyListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuddyListVC.h; sourceTree = "<group>"; };
+		79A73EA81972F4CA009E5A6F /* BuddyListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuddyListVC.m; sourceTree = "<group>"; };
+		79A73EA91972F4CA009E5A6F /* ConversationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationVC.h; sourceTree = "<group>"; };
+		79A73EAA1972F4CA009E5A6F /* ConversationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationVC.m; sourceTree = "<group>"; };
+		79A73EAB1972F4CA009E5A6F /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		79A73EAC1972F4CA009E5A6F /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		79A73EAE1972F4CA009E5A6F /* ChatModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatModel.h; sourceTree = "<group>"; };
+		79A73EAF1972F4CA009E5A6F /* ChatModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatModel.m; sourceTree = "<group>"; };
+		79A73EB01972F4CA009E5A6F /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		79A73EB11972F4CA009E5A6F /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		79A73EB21972F4CA009E5A6F /* StartUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StartUp.storyboard; sourceTree = "<group>"; };
+		79A73EBA1972F4D2009E5A6F /* ChatMessageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMessageVC.h; sourceTree = "<group>"; };
+		79A73EBB1972F4D2009E5A6F /* ChatMessageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMessageVC.m; sourceTree = "<group>"; };
+		79A73EBC1972F4D2009E5A6F /* Messaging.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Messaging.storyboard; sourceTree = "<group>"; };
+		79A73EBD1972F4D2009E5A6F /* MessagingSoundEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagingSoundEffect.h; sourceTree = "<group>"; };
+		79A73EBE1972F4D2009E5A6F /* MessagingSoundEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagingSoundEffect.m; sourceTree = "<group>"; };
+		79A73EC01972F4D2009E5A6F /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		79A73EC11972F4D2009E5A6F /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		79A73EC71972F4DA009E5A6F /* SendMessageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageOperation.h; sourceTree = "<group>"; };
+		79A73EC81972F4DA009E5A6F /* SendMessageOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageOperation.m; sourceTree = "<group>"; };
+		79A73ECA1972F4DA009E5A6F /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
+		79A73ECB1972F4DA009E5A6F /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		79A73ECC1972F4DA009E5A6F /* NetworkDisconnectedVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkDisconnectedVC.h; sourceTree = "<group>"; };
+		79A73ECD1972F4DA009E5A6F /* NetworkDisconnectedVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkDisconnectedVC.m; sourceTree = "<group>"; };
+		79A73ECE1972F4DA009E5A6F /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		79A73ECF1972F4DA009E5A6F /* SettingsVC+Share.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SettingsVC+Share.h"; sourceTree = "<group>"; };
+		79A73ED01972F4DA009E5A6F /* SettingsVC+Share.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SettingsVC+Share.m"; sourceTree = "<group>"; };
+		79A73ED11972F4DA009E5A6F /* SettingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsVC.h; sourceTree = "<group>"; };
+		79A73ED21972F4DA009E5A6F /* SettingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsVC.m; sourceTree = "<group>"; };
+		79A73ED31972F4DA009E5A6F /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
+		79A73ED41972F4DA009E5A6F /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +203,14 @@
 		79A73E471972F411009E5A6F /* ExuTalk */ = {
 			isa = PBXGroup;
 			children = (
+				79A73EC61972F4DA009E5A6F /* Network Operation */,
+				79A73EC91972F4DA009E5A6F /* Settings */,
+				79A73EB91972F4D2009E5A6F /* Messaging */,
+				79A73EA61972F4CA009E5A6F /* Login */,
+				79A73EA31972F4C2009E5A6F /* Helper */,
+				79A73E9F1972F4BA009E5A6F /* Contacts */,
+				79A73E9B1972F4B0009E5A6F /* Base Items */,
+				79A73E781972F49D009E5A6F /* Assets */,
 				79A73E501972F411009E5A6F /* AppDelegate.h */,
 				79A73E511972F411009E5A6F /* AppDelegate.m */,
 				79A73E561972F411009E5A6F /* Images.xcassets */,
@@ -151,6 +247,147 @@
 				79A73E671972F411009E5A6F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79A73E781972F49D009E5A6F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				79A73E791972F49D009E5A6F /* Images */,
+				79A73E881972F49D009E5A6F /* Sounds */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		79A73E791972F49D009E5A6F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				79A73E7A1972F49D009E5A6F /* aqua.png */,
+				79A73E7B1972F49D009E5A6F /* back.png */,
+				79A73E7C1972F49D009E5A6F /* btn_rectangle_normal.png */,
+				79A73E7D1972F49D009E5A6F /* btn_rectangle_normal@2x.png */,
+				79A73E7E1972F49D009E5A6F /* camera.png */,
+				79A73E7F1972F49D009E5A6F /* camera@2x.png */,
+				79A73E801972F49D009E5A6F /* chats.png */,
+				79A73E811972F49D009E5A6F /* contacts.png */,
+				79A73E821972F49D009E5A6F /* defaultPerson.png */,
+				79A73E831972F49D009E5A6F /* header_tile.png */,
+				79A73E841972F49D009E5A6F /* horizontalDivider.png */,
+				79A73E851972F49D009E5A6F /* orange.png */,
+				79A73E861972F49D009E5A6F /* send.png */,
+				79A73E871972F49D009E5A6F /* settings.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		79A73E881972F49D009E5A6F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				79A73E891972F49D009E5A6F /* messageReceived.aiff */,
+				79A73E8A1972F49D009E5A6F /* messageSent.aiff */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		79A73E9B1972F4B0009E5A6F /* Base Items */ = {
+			isa = PBXGroup;
+			children = (
+				79A73E9C1972F4B0009E5A6F /* BaseVC.h */,
+				79A73E9D1972F4B0009E5A6F /* BaseVC.m */,
+			);
+			path = "Base Items";
+			sourceTree = "<group>";
+		};
+		79A73E9F1972F4BA009E5A6F /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				79A73EA01972F4BA009E5A6F /* ContactsVC.h */,
+				79A73EA11972F4BA009E5A6F /* ContactsVC.m */,
+			);
+			path = Contacts;
+			sourceTree = "<group>";
+		};
+		79A73EA31972F4C2009E5A6F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				79A73EA41972F4C2009E5A6F /* AppConstants.h */,
+				79A73EA51972F4C2009E5A6F /* AppProtocol.h */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		79A73EA61972F4CA009E5A6F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				79A73EA71972F4CA009E5A6F /* BuddyListVC.h */,
+				79A73EA81972F4CA009E5A6F /* BuddyListVC.m */,
+				79A73EA91972F4CA009E5A6F /* ConversationVC.h */,
+				79A73EAA1972F4CA009E5A6F /* ConversationVC.m */,
+				79A73EAB1972F4CA009E5A6F /* LoginVC.h */,
+				79A73EAC1972F4CA009E5A6F /* LoginVC.m */,
+				79A73EAD1972F4CA009E5A6F /* Model */,
+				79A73EB21972F4CA009E5A6F /* StartUp.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		79A73EAD1972F4CA009E5A6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79A73EAE1972F4CA009E5A6F /* ChatModel.h */,
+				79A73EAF1972F4CA009E5A6F /* ChatModel.m */,
+				79A73EB01972F4CA009E5A6F /* LoginModel.h */,
+				79A73EB11972F4CA009E5A6F /* LoginModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79A73EB91972F4D2009E5A6F /* Messaging */ = {
+			isa = PBXGroup;
+			children = (
+				79A73EBA1972F4D2009E5A6F /* ChatMessageVC.h */,
+				79A73EBB1972F4D2009E5A6F /* ChatMessageVC.m */,
+				79A73EBC1972F4D2009E5A6F /* Messaging.storyboard */,
+				79A73EBD1972F4D2009E5A6F /* MessagingSoundEffect.h */,
+				79A73EBE1972F4D2009E5A6F /* MessagingSoundEffect.m */,
+				79A73EBF1972F4D2009E5A6F /* Model */,
+			);
+			path = Messaging;
+			sourceTree = "<group>";
+		};
+		79A73EBF1972F4D2009E5A6F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79A73EC01972F4D2009E5A6F /* MessageModel.h */,
+				79A73EC11972F4D2009E5A6F /* MessageModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		79A73EC61972F4DA009E5A6F /* Network Operation */ = {
+			isa = PBXGroup;
+			children = (
+				79A73EC71972F4DA009E5A6F /* SendMessageOperation.h */,
+				79A73EC81972F4DA009E5A6F /* SendMessageOperation.m */,
+			);
+			path = "Network Operation";
+			sourceTree = "<group>";
+		};
+		79A73EC91972F4DA009E5A6F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				79A73ECA1972F4DA009E5A6F /* AboutVC.h */,
+				79A73ECB1972F4DA009E5A6F /* AboutVC.m */,
+				79A73ECC1972F4DA009E5A6F /* NetworkDisconnectedVC.h */,
+				79A73ECD1972F4DA009E5A6F /* NetworkDisconnectedVC.m */,
+				79A73ECE1972F4DA009E5A6F /* Settings.storyboard */,
+				79A73ECF1972F4DA009E5A6F /* SettingsVC+Share.h */,
+				79A73ED01972F4DA009E5A6F /* SettingsVC+Share.m */,
+				79A73ED11972F4DA009E5A6F /* SettingsVC.h */,
+				79A73ED21972F4DA009E5A6F /* SettingsVC.m */,
+				79A73ED31972F4DA009E5A6F /* ShareVC.h */,
+				79A73ED41972F4DA009E5A6F /* ShareVC.m */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,8 +465,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A73EB81972F4CA009E5A6F /* StartUp.storyboard in Resources */,
+				79A73E981972F49D009E5A6F /* settings.png in Resources */,
+				79A73E941972F49D009E5A6F /* header_tile.png in Resources */,
+				79A73E911972F49D009E5A6F /* chats.png in Resources */,
+				79A73E8C1972F49D009E5A6F /* back.png in Resources */,
+				79A73E8F1972F49D009E5A6F /* camera.png in Resources */,
+				79A73ED81972F4DA009E5A6F /* Settings.storyboard in Resources */,
+				79A73E8D1972F49D009E5A6F /* btn_rectangle_normal.png in Resources */,
+				79A73E921972F49D009E5A6F /* contacts.png in Resources */,
+				79A73E951972F49D009E5A6F /* horizontalDivider.png in Resources */,
+				79A73EC31972F4D2009E5A6F /* Messaging.storyboard in Resources */,
+				79A73E901972F49D009E5A6F /* camera@2x.png in Resources */,
 				79A73E4C1972F411009E5A6F /* InfoPlist.strings in Resources */,
 				79A73E571972F411009E5A6F /* Images.xcassets in Resources */,
+				79A73E9A1972F49D009E5A6F /* messageSent.aiff in Resources */,
+				79A73E8E1972F49D009E5A6F /* btn_rectangle_normal@2x.png in Resources */,
+				79A73E971972F49D009E5A6F /* send.png in Resources */,
+				79A73E931972F49D009E5A6F /* defaultPerson.png in Resources */,
+				79A73E991972F49D009E5A6F /* messageReceived.aiff in Resources */,
+				79A73E8B1972F49D009E5A6F /* aqua.png in Resources */,
+				79A73E961972F49D009E5A6F /* orange.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +504,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A73EA21972F4BA009E5A6F /* ContactsVC.m in Sources */,
+				79A73EB41972F4CA009E5A6F /* ConversationVC.m in Sources */,
+				79A73EC21972F4D2009E5A6F /* ChatMessageVC.m in Sources */,
+				79A73EB31972F4CA009E5A6F /* BuddyListVC.m in Sources */,
 				79A73E521972F411009E5A6F /* AppDelegate.m in Sources */,
+				79A73EDA1972F4DA009E5A6F /* SettingsVC.m in Sources */,
+				79A73ED91972F4DA009E5A6F /* SettingsVC+Share.m in Sources */,
+				79A73EC41972F4D2009E5A6F /* MessagingSoundEffect.m in Sources */,
+				79A73ED61972F4DA009E5A6F /* AboutVC.m in Sources */,
 				79A73E551972F411009E5A6F /* ExuTalk.xcdatamodeld in Sources */,
+				79A73ED71972F4DA009E5A6F /* NetworkDisconnectedVC.m in Sources */,
+				79A73ED51972F4DA009E5A6F /* SendMessageOperation.m in Sources */,
 				79A73E4E1972F411009E5A6F /* main.m in Sources */,
+				79A73EC51972F4D2009E5A6F /* MessageModel.m in Sources */,
+				79A73EDB1972F4DA009E5A6F /* ShareVC.m in Sources */,
+				79A73EB61972F4CA009E5A6F /* ChatModel.m in Sources */,
+				79A73EB51972F4CA009E5A6F /* LoginVC.m in Sources */,
+				79A73E9E1972F4B0009E5A6F /* BaseVC.m in Sources */,
+				79A73EB71972F4CA009E5A6F /* LoginModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

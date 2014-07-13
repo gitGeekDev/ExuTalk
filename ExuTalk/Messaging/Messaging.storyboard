@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Kqu-0P-0Du">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Chat MessageVC-->
+        <scene sceneID="HKu-5f-Rk3">
+            <objects>
+                <viewController storyboardIdentifier="ChatMessageVC" id="Kqu-0P-0Du" customClass="ChatMessageVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Whi-5c-nW9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="9yT-SQ-H24">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="o8x-T5-Bvc">
+                                        <rect key="frame" x="6" y="28" width="74" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal" title="Chats" image="back.png">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTouchBackButton:" destination="Kqu-0P-0Du" eventType="touchUpInside" id="XlI-ct-Rsq"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ZhP-59-qM7">
+                                        <rect key="frame" x="88" y="28" width="178" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horizontalDivider.png" id="q3s-Rf-AJo">
+                                        <rect key="frame" x="0.0" y="67" width="320" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPerson.png" id="337-1b-MMp">
+                                        <rect key="frame" x="275" y="19" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="57" sectionHeaderHeight="22" sectionFooterHeight="22" id="xtQ-Xr-PNv">
+                                <rect key="frame" x="1" y="69" width="320" height="452"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageSectionHeader" rowHeight="24" id="99D-de-FN7">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="99D-de-FN7" id="sQm-Sb-skG">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="24"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="section Header" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CQb-q8-bEo">
+                                                    <rect key="frame" x="20" y="0.0" width="280" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatIncoming" rowHeight="46" id="R0k-CP-jgf" customClass="ChatIncoming">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="R0k-CP-jgf" id="NI7-RG-OAk">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orange.png" id="qpf-xX-YIc">
+                                                    <rect key="frame" x="20" y="2" width="83" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="incoming" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DCy-l8-3To">
+                                                    <rect key="frame" x="37" y="13" width="207" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="chatMessage" destination="DCy-l8-3To" id="R5u-MA-N92"/>
+                                            <outlet property="imgChatBgImage" destination="qpf-xX-YIc" id="jPL-bn-q3T"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChatOutgoing" rowHeight="49" id="9F2-j8-TAb" customClass="ChatOutgoing">
+                                        <rect key="frame" x="0.0" y="92" width="320" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9F2-j8-TAb" id="m27-r1-vXu">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aqua.png" id="fKv-YD-HZM">
+                                                    <rect key="frame" x="217" y="7" width="83" height="41"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="outgoing" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UQv-FB-Ezu">
+                                                    <rect key="frame" x="64" y="13" width="219" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="chatMessage" destination="UQv-FB-Ezu" id="6w1-LV-he4"/>
+                                            <outlet property="imgChatBgImage" destination="fKv-YD-HZM" id="PbT-kB-XbI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Kqu-0P-0Du" id="YeA-2h-lPD"/>
+                                    <outlet property="delegate" destination="Kqu-0P-0Du" id="QXF-aE-xeo"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" id="QNx-6o-Bc0">
+                                <rect key="frame" x="0.0" y="522" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horizontalDivider.png" id="ha2-Hp-952">
+                                        <rect key="frame" x="0.0" y="2" width="320" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="rtL-xC-HXg">
+                                        <rect key="frame" x="7" y="6" width="41" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="camera.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTouchOptions:" destination="Kqu-0P-0Du" eventType="touchUpInside" id="NoN-0o-g1u"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xKT-iy-206">
+                                        <rect key="frame" x="272" y="6" width="48" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="send.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTouchSendMessage:" destination="Kqu-0P-0Du" eventType="touchUpInside" id="zgO-aJ-8JZ"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" id="2Qt-mn-gpl">
+                                        <rect key="frame" x="56" y="11" width="208" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Kqu-0P-0Du" id="kLE-k8-Qgu"/>
+                                        </connections>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="r8X-Ub-WnJ" appends="YES" id="JSF-DI-bOL"/>
+                                    <outletCollection property="gestureRecognizers" destination="MmE-qd-EmB" appends="YES" id="BSU-w9-Bmu"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="1qb-yr-8UO" appends="YES" id="vEZ-2X-wta"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="bottomInputView" destination="QNx-6o-Bc0" id="CnZ-PD-iMp"/>
+                        <outlet property="btnBack" destination="o8x-T5-Bvc" id="KX0-si-iN7"/>
+                        <outlet property="btnOptions" destination="rtL-xC-HXg" id="vNz-Jo-fmQ"/>
+                        <outlet property="btnSend" destination="xKT-iy-206" id="V5T-fZ-Lua"/>
+                        <outlet property="lblUserName" destination="ZhP-59-qM7" id="iff-3m-w8q"/>
+                        <outlet property="swipeDownGesture" destination="r8X-Ub-WnJ" id="WGj-an-5Ab"/>
+                        <outlet property="swipeUpGesture" destination="MmE-qd-EmB" id="JVt-kZ-mvN"/>
+                        <outlet property="tblChats" destination="xtQ-Xr-PNv" id="dLk-Cf-1mc"/>
+                        <outlet property="tfInput" destination="2Qt-mn-gpl" id="XgJ-Xq-0RH"/>
+                        <outlet property="userImage" destination="337-1b-MMp" id="Jar-dA-ULz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liJ-sF-ejO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="1qb-yr-8UO">
+                    <connections>
+                        <action selector="handleTApGesture:" destination="Kqu-0P-0Du" id="KzD-fQ-c8P"/>
+                        <outlet property="delegate" destination="Kqu-0P-0Du" id="m4x-lv-u7I"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer delaysTouchesBegan="YES" direction="down" id="r8X-Ub-WnJ">
+                    <connections>
+                        <action selector="handleSwipeGesture:" destination="Kqu-0P-0Du" id="D79-bh-9w2"/>
+                        <outlet property="delegate" destination="Kqu-0P-0Du" id="nt0-90-SEz"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="MmE-qd-EmB">
+                    <connections>
+                        <action selector="handleSwipeUpGesture:" destination="Kqu-0P-0Du" id="HNB-Wg-QrJ"/>
+                        <outlet property="delegate" destination="Kqu-0P-0Du" id="FvS-2s-kVp"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="106" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aqua.png" width="43" height="32"/>
+        <image name="back.png" width="32" height="32"/>
+        <image name="camera.png" width="25" height="20"/>
+        <image name="defaultPerson.png" width="50" height="50"/>
+        <image name="horizontalDivider.png" width="329" height="3"/>
+        <image name="orange.png" width="43" height="32"/>
+        <image name="send.png" width="32" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
