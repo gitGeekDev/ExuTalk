@@ -4,14 +4,68 @@
 //  The contents of this file are implicitly included at the beginning of every source file.
 //
 
+#ifdef __OBJC__
+@import Foundation;
+@import UIKit;
+@import SystemConfiguration;
+@import MobileCoreServices;
+@import Social;
+@import MessageUI;
+@import QuartzCore;
+@import MapKit;
+@import CoreLocation;
+@import AddressBook;
+
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+#pragma clang diagnostic ignored "-Wshorten-64-to-32"
+#pragma clang diagnostic ignored "-Wformat"
+
 #import <Availability.h>
 
-#ifndef __IPHONE_3_0
-#warning "This project uses features only available in iOS SDK 3.0 and later."
+//lumberjack
+//#include "CPLog.h"
+//#ifndef APPSTORE
+//__unused static int ddLogLevel = LOG_LEVEL_HTTP;
+//#else
+//__unused static int ddLogLevel = LOG_LEVEL_ERROR;
+//#endif
+
+//add test flight
+//#import "CPBaseModel.h"
+//#include "CPRestDefs.h"
+#import "DDLog.h"
+#import "DDTTYLogger.h"
+
+// Log levels: off, error, warn, info, verbose
+#if DEBUG
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
+#else
+static const int ddLogLevel = LOG_LEVEL_INFO;
 #endif
 
-#ifdef __OBJC__
-    #import <UIKit/UIKit.h>
-    #import <Foundation/Foundation.h>
-    #import <CoreData/CoreData.h>
+#import "AppConstants.h"
+#import "Typedefs.h"
+#import "OrderedDictionary.h"
+#import "BlockButton.h"
+#import "UIActionSheet+BlockButtons.h"
+#import "UIAlertView+BlockButtons.h"
+#import "NSSet+Blocks.h"
+#import "NSArray+Blocks.h"
+#import "NSDictionary+Blocks.h"
+#import "NSDictionary+Types.h"
+#import "NSMutableArray+Stack.h"
+#import "NSNumber+Extras.h"
+#import "NSString+Extras.h"
+#import "NSObject+deallocBlock.h"
+#import "NSObject+DLIntrospection.h"
+#import "NSObject+Swizzle.h"
+#import "UIImage+Extras.h"
+#import "UIColor+Expanded.h"
+#import "UIButton+Extras.h"
+#import "UILabel+Extras.h"
+#import "UIView+Extras.h"
+#import "NSURLRequest+Extras.h"
+#import "NTJSON.h"
+#import "NTAssetJSON.h"
+#import "AppDelegate.h"
 #endif
