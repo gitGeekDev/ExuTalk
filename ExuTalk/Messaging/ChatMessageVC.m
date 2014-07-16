@@ -243,15 +243,34 @@
     }
 }
 
+-(void)sendMessage:(NSString*)strMessage completionHandler:(void (^)())handler{
+    NSXMLElement *body = [NSXMLElement elementWithName:@"body" stringValue:strMessage];
+    NSXMLElement *message = [NSXMLElement elementWithName:@"message"];
+    [message addAttributeWithName:@"type" stringValue:@"chat"];
+    [message addAttributeWithName:@"to" stringValue:self.chatWithUser.jidStr];
+    [message addChild:body];
+    [theAppDelegate.xmppStream sendElement:message];
+
+    if (handler) {
+        handler();
+    }
+}
+
 - (IBAction)didTouchSendMessage:(id)sender {
-    SendMessageOperation    *sendOperation  =   [[SendMessageOperation alloc] initWithMessage:self.tfInput.text
-                                                                                       forJid:self.chatWithUser.jidStr];
-    self.tfInput.text   =   @"";
-    [sendOperation setCompletionBlock:^{
+    
+    [self sendMessage:self.tfInput.text completionHandler:^{
         [self showEarlierMessagesFromStorage:YES];
         [MessagingSoundEffect playMessageSentSound];
     }];
-    [self.messageOperationQueue addOperation:sendOperation];
+    
+//    SendMessageOperation    *sendOperation  =   [[SendMessageOperation alloc] initWithMessage:self.tfInput.text
+//                                                                                       forJid:self.chatWithUser.jidStr];
+    self.tfInput.text   =   @"";
+//    [sendOperation setCompletionBlock:^{
+//        [self showEarlierMessagesFromStorage:YES];
+//        [MessagingSoundEffect playMessageSentSound];
+//    }];
+//    [self.messageOperationQueue addOperation:sendOperation];
 }
 
 - (IBAction)didTouchOptions:(id)sender {

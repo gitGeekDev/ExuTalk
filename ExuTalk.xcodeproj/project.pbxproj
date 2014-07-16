@@ -2484,6 +2484,7 @@
 				79A73E701972F411009E5A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79A73E711972F411009E5A6F /* Build configuration list for PBXNativeTarget "ExuTalkTests" */ = {
 			isa = XCConfigurationList;
@@ -2492,6 +2493,7 @@
 				79A73E731972F411009E5A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
