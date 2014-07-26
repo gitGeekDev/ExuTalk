@@ -181,13 +181,14 @@
                         messageModel.isOutGoing =   YES;
                     }
                     
-                    
-                    [self.tblChats beginUpdates];
-                    [self.tblChats insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:self.chatList.count
-                                                                               inSection:0]]
-                                         withRowAnimation:UITableViewRowAnimationRight];
                     [self.chatList addObject:messageModel];
-                    [self.tblChats endUpdates];
+                    [self.tblChats reloadData];
+//                    [self.tblChats beginUpdates];
+//                    [self.tblChats insertRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:self.chatList.count
+//                                                                               inSection:0]]
+//                                         withRowAnimation:UITableViewRowAnimationRight];
+//                    [self.chatList addObject:messageModel];
+//                    [self.tblChats endUpdates];
                 }
             }
         }
@@ -249,23 +250,28 @@
     [message addAttributeWithName:@"type" stringValue:@"chat"];
     [message addAttributeWithName:@"to" stringValue:self.chatWithUser.jidStr];
     [message addChild:body];
+    
     [theAppDelegate.xmppStream sendElement:message];
-
-    if (handler) {
-        handler();
-    }
+    
+        if (handler) {
+            handler();
+        }
 }
 
 - (IBAction)didTouchSendMessage:(id)sender {
     
-    [self sendMessage:self.tfInput.text completionHandler:^{
+    if (self.tfInput.text.length) {
+        [self sendMessage:self.tfInput.text completionHandler:^{
+        self.tfInput.text   =   @"";
+        }];
         [self showEarlierMessagesFromStorage:YES];
         [MessagingSoundEffect playMessageSentSound];
-    }];
+    }
+
     
 //    SendMessageOperation    *sendOperation  =   [[SendMessageOperation alloc] initWithMessage:self.tfInput.text
 //                                                                                       forJid:self.chatWithUser.jidStr];
-    self.tfInput.text   =   @"";
+
 //    [sendOperation setCompletionBlock:^{
 //        [self showEarlierMessagesFromStorage:YES];
 //        [MessagingSoundEffect playMessageSentSound];
@@ -383,13 +389,20 @@
 }
 
 -(void)newMessageReceived:(NSNotification *)notification{
-    dispatch_async_default(^{
+    dispatch_async_main(^{
         NSString    *notificationForJid =   notification.userInfo[@"newMessageRecievedForJid"];
         if ([notificationForJid isEqualToString:self.chatWithUser.jidStr]) {
             [self showEarlierMessagesFromStorage:YES];
             [MessagingSoundEffect playMessageReceivedSound];
         }
     });
+//    dispatch_async_default(^{
+//        NSString    *notificationForJid =   notification.userInfo[@"newMessageRecievedForJid"];
+//        if ([notificationForJid isEqualToString:self.chatWithUser.jidStr]) {
+//            [self showEarlierMessagesFromStorage:YES];
+//            [MessagingSoundEffect playMessageReceivedSound];
+//        }
+//    });
 }
 
 -(void)registerForKeyboardNotification
@@ -622,7 +635,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     MessageModel   *msgModel  =   self.chatList[indexPath.row];
-    if ([msgModel.sender isEqualToString:@"you"] || msgModel.isOutGoing) {
+    if (msgModel.isOutGoing) {//[msgModel.sender isEqualToString:@"you"] ||
         ChatOutgoing *cell    =   [self.tblChats dequeueReusableCellWithIdentifier:@"ChatOutgoing"];
         cell.chatMessage.text   =[NSString stringWithFormat:@"%d",indexPath.row];
         [cell updateWithModel:msgModel];
@@ -639,7 +652,7 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     MessageModel   *msgModel  =   self.chatList[indexPath.row];
-    if ([msgModel.sender isEqualToString:@"you"]  || msgModel.isOutGoing) {
+    if (msgModel.isOutGoing) {  //[msgModel.sender isEqualToString:@"you"]  ||
         ChatOutgoing *cell    =   [self.tblChats dequeueReusableCellWithIdentifier:@"ChatOutgoing"];
         [cell updateWithModel:msgModel];
         [cell layoutSubviews];
