@@ -135,6 +135,8 @@
 }
 
 -(void)testMessageArchiving{
+    
+    fetchedResultsController    =   nil;
     //contact entity
     XMPPMessageArchivingCoreDataStorage *storage = [XMPPMessageArchivingCoreDataStorage sharedInstance];
     NSManagedObjectContext *moc = [storage mainThreadManagedObjectContext];
@@ -178,7 +180,7 @@
     }
     [self.userMessages removeAllObjects];
 
-    for (NSDictionary *dictContact in contacts) {
+    for (NSDictionary *dictContact in self.messageContact) {
         NSEntityDescription *messageEntityDescription = [NSEntityDescription entityForName:[storage messageEntityName]
                                                                     inManagedObjectContext:moc];
         
