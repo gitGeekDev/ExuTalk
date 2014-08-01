@@ -37,6 +37,7 @@
     NSString *strName   =   [[NSUserDefaults standardUserDefaults] valueForKey:kXMPPmyJID];
     NSString *strPwd   =	[[NSUserDefaults standardUserDefaults] valueForKey:kXMPPmyPassword];
     
+    NSLog(@"%@",strName);
     XCTAssertTrue([@"manish.mcaipu@gmail.com" isEqualToString:strName], @"");
     XCTAssertTrue([@"mygmail01" isEqualToString:strPwd], @"");
 }
