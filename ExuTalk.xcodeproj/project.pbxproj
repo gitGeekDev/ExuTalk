@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79275BF6198BE235004D4CC6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E5D1972F411009E5A6F /* XCTest.framework */; };
+		79275BF7198BE235004D4CC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E3F1972F411009E5A6F /* Foundation.framework */; };
+		79275BF8198BE235004D4CC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E431972F411009E5A6F /* UIKit.framework */; };
+		79275BFE198BE235004D4CC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79275BFC198BE235004D4CC6 /* InfoPlist.strings */; };
+		79275C08198BE5E6004D4CC6 /* LoginTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 79275C07198BE5E6004D4CC6 /* LoginTest.m */; };
 		79A73E401972F411009E5A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E3F1972F411009E5A6F /* Foundation.framework */; };
 		79A73E421972F411009E5A6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E411972F411009E5A6F /* CoreGraphics.framework */; };
 		79A73E441972F411009E5A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E431972F411009E5A6F /* UIKit.framework */; };
@@ -16,12 +21,6 @@
 		79A73E521972F411009E5A6F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73E511972F411009E5A6F /* AppDelegate.m */; };
 		79A73E551972F411009E5A6F /* ExuTalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79A73E531972F411009E5A6F /* ExuTalk.xcdatamodeld */; };
 		79A73E571972F411009E5A6F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E561972F411009E5A6F /* Images.xcassets */; };
-		79A73E5E1972F411009E5A6F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E5D1972F411009E5A6F /* XCTest.framework */; };
-		79A73E5F1972F411009E5A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E3F1972F411009E5A6F /* Foundation.framework */; };
-		79A73E601972F411009E5A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E431972F411009E5A6F /* UIKit.framework */; };
-		79A73E611972F411009E5A6F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E451972F411009E5A6F /* CoreData.framework */; };
-		79A73E691972F411009E5A6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E671972F411009E5A6F /* InfoPlist.strings */; };
-		79A73E6B1972F411009E5A6F /* ExuTalkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A73E6A1972F411009E5A6F /* ExuTalkTests.m */; };
 		79A73E8B1972F49D009E5A6F /* aqua.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E7A1972F49D009E5A6F /* aqua.png */; };
 		79A73E8C1972F49D009E5A6F /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E7B1972F49D009E5A6F /* back.png */; };
 		79A73E8D1972F49D009E5A6F /* btn_rectangle_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 79A73E7C1972F49D009E5A6F /* btn_rectangle_normal.png */; };
@@ -255,7 +254,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		79A73E621972F411009E5A6F /* PBXContainerItemProxy */ = {
+		79275C02198BE235004D4CC6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79A73E341972F411009E5A6F /* Project object */;
 			proxyType = 1;
@@ -265,6 +264,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		79275BF5198BE235004D4CC6 /* ExuTalkLogicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExuTalkLogicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79275BFB198BE235004D4CC6 /* ExuTalkLogicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExuTalkLogicTests-Info.plist"; sourceTree = "<group>"; };
+		79275BFD198BE235004D4CC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79275C01198BE235004D4CC6 /* ExuTalkLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExuTalkLogicTests-Prefix.pch"; sourceTree = "<group>"; };
+		79275C07198BE5E6004D4CC6 /* LoginTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTest.m; sourceTree = "<group>"; };
 		79A73E3C1972F411009E5A6F /* ExuTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExuTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A73E3F1972F411009E5A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79A73E411972F411009E5A6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -278,11 +282,7 @@
 		79A73E511972F411009E5A6F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		79A73E541972F411009E5A6F /* ExuTalk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExuTalk.xcdatamodel; sourceTree = "<group>"; };
 		79A73E561972F411009E5A6F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		79A73E5C1972F411009E5A6F /* ExuTalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExuTalkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A73E5D1972F411009E5A6F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		79A73E661972F411009E5A6F /* ExuTalkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExuTalkTests-Info.plist"; sourceTree = "<group>"; };
-		79A73E681972F411009E5A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		79A73E6A1972F411009E5A6F /* ExuTalkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExuTalkTests.m; sourceTree = "<group>"; };
 		79A73E7A1972F49D009E5A6F /* aqua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aqua.png; sourceTree = "<group>"; };
 		79A73E7B1972F49D009E5A6F /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		79A73E7C1972F49D009E5A6F /* btn_rectangle_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_rectangle_normal.png; sourceTree = "<group>"; };
@@ -729,6 +729,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		79275BF2198BE235004D4CC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79275BF6198BE235004D4CC6 /* XCTest.framework in Frameworks */,
+				79275BF8198BE235004D4CC6 /* UIKit.framework in Frameworks */,
+				79275BF7198BE235004D4CC6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79A73E391972F411009E5A6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -752,25 +762,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79A73E591972F411009E5A6F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79A73E5E1972F411009E5A6F /* XCTest.framework in Frameworks */,
-				79A73E611972F411009E5A6F /* CoreData.framework in Frameworks */,
-				79A73E601972F411009E5A6F /* UIKit.framework in Frameworks */,
-				79A73E5F1972F411009E5A6F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		79275BF9198BE235004D4CC6 /* ExuTalkLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				79275BFA198BE235004D4CC6 /* Supporting Files */,
+				79275C07198BE5E6004D4CC6 /* LoginTest.m */,
+			);
+			path = ExuTalkLogicTests;
+			sourceTree = "<group>";
+		};
+		79275BFA198BE235004D4CC6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79275BFB198BE235004D4CC6 /* ExuTalkLogicTests-Info.plist */,
+				79275BFC198BE235004D4CC6 /* InfoPlist.strings */,
+				79275C01198BE235004D4CC6 /* ExuTalkLogicTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		79A73E331972F411009E5A6F = {
 			isa = PBXGroup;
 			children = (
 				79A73E471972F411009E5A6F /* ExuTalk */,
-				79A73E641972F411009E5A6F /* ExuTalkTests */,
+				79275BF9198BE235004D4CC6 /* ExuTalkLogicTests */,
 				79A73E3E1972F411009E5A6F /* Frameworks */,
 				79A73E3D1972F411009E5A6F /* Products */,
 			);
@@ -780,7 +798,7 @@
 			isa = PBXGroup;
 			children = (
 				79A73E3C1972F411009E5A6F /* ExuTalk.app */,
-				79A73E5C1972F411009E5A6F /* ExuTalkTests.xctest */,
+				79275BF5198BE235004D4CC6 /* ExuTalkLogicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -836,24 +854,6 @@
 				79A73E4A1972F411009E5A6F /* InfoPlist.strings */,
 				79A73E4D1972F411009E5A6F /* main.m */,
 				79A73E4F1972F411009E5A6F /* ExuTalk-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		79A73E641972F411009E5A6F /* ExuTalkTests */ = {
-			isa = PBXGroup;
-			children = (
-				79A73E6A1972F411009E5A6F /* ExuTalkTests.m */,
-				79A73E651972F411009E5A6F /* Supporting Files */,
-			);
-			path = ExuTalkTests;
-			sourceTree = "<group>";
-		};
-		79A73E651972F411009E5A6F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				79A73E661972F411009E5A6F /* ExuTalkTests-Info.plist */,
-				79A73E671972F411009E5A6F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1940,6 +1940,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		79275BF4198BE235004D4CC6 /* ExuTalkLogicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79275C06198BE235004D4CC6 /* Build configuration list for PBXNativeTarget "ExuTalkLogicTests" */;
+			buildPhases = (
+				79275BF1198BE235004D4CC6 /* Sources */,
+				79275BF2198BE235004D4CC6 /* Frameworks */,
+				79275BF3198BE235004D4CC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79275C03198BE235004D4CC6 /* PBXTargetDependency */,
+			);
+			name = ExuTalkLogicTests;
+			productName = ExuTalkLogicTests;
+			productReference = 79275BF5198BE235004D4CC6 /* ExuTalkLogicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		79A73E3B1972F411009E5A6F /* ExuTalk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79A73E6E1972F411009E5A6F /* Build configuration list for PBXNativeTarget "ExuTalk" */;
@@ -1957,24 +1975,6 @@
 			productReference = 79A73E3C1972F411009E5A6F /* ExuTalk.app */;
 			productType = "com.apple.product-type.application";
 		};
-		79A73E5B1972F411009E5A6F /* ExuTalkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79A73E711972F411009E5A6F /* Build configuration list for PBXNativeTarget "ExuTalkTests" */;
-			buildPhases = (
-				79A73E581972F411009E5A6F /* Sources */,
-				79A73E591972F411009E5A6F /* Frameworks */,
-				79A73E5A1972F411009E5A6F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79A73E631972F411009E5A6F /* PBXTargetDependency */,
-			);
-			name = ExuTalkTests;
-			productName = ExuTalkTests;
-			productReference = 79A73E5C1972F411009E5A6F /* ExuTalkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -1984,7 +1984,7 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Manish Kumar";
 				TargetAttributes = {
-					79A73E5B1972F411009E5A6F = {
+					79275BF4198BE235004D4CC6 = {
 						TestTargetID = 79A73E3B1972F411009E5A6F;
 					};
 				};
@@ -2003,12 +2003,20 @@
 			projectRoot = "";
 			targets = (
 				79A73E3B1972F411009E5A6F /* ExuTalk */,
-				79A73E5B1972F411009E5A6F /* ExuTalkTests */,
+				79275BF4198BE235004D4CC6 /* ExuTalkLogicTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		79275BF3198BE235004D4CC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79275BFE198BE235004D4CC6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79A73E3A1972F411009E5A6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2039,17 +2047,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79A73E5A1972F411009E5A6F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79A73E691972F411009E5A6F /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		79275BF1198BE235004D4CC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79275C08198BE5E6004D4CC6 /* LoginTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		79A73E381972F411009E5A6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2257,25 +2265,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79A73E581972F411009E5A6F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79A73E6B1972F411009E5A6F /* ExuTalkTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		79A73E631972F411009E5A6F /* PBXTargetDependency */ = {
+		79275C03198BE235004D4CC6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 79A73E3B1972F411009E5A6F /* ExuTalk */;
-			targetProxy = 79A73E621972F411009E5A6F /* PBXContainerItemProxy */;
+			targetProxy = 79275C02198BE235004D4CC6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		79275BFC198BE235004D4CC6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79275BFD198BE235004D4CC6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		79A73E4A1972F411009E5A6F /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -2284,17 +2292,59 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		79A73E671972F411009E5A6F /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				79A73E681972F411009E5A6F /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		79275C04198BE235004D4CC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExuTalk.app/ExuTalk";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExuTalkLogicTests/ExuTalkLogicTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SDKROOT/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "ExuTalkLogicTests/ExuTalkLogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		79275C05198BE235004D4CC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExuTalk.app/ExuTalk";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ExuTalkLogicTests/ExuTalkLogicTests-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					$SDKROOT/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "ExuTalkLogicTests/ExuTalkLogicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		79A73E6C1972F411009E5A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2425,49 +2475,17 @@
 			};
 			name = Release;
 		};
-		79A73E721972F411009E5A6F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExuTalk.app/ExuTalk";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ExuTalk/ExuTalk-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ExuTalkTests/ExuTalkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		79A73E731972F411009E5A6F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ExuTalk.app/ExuTalk";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ExuTalk/ExuTalk-Prefix.pch";
-				INFOPLIST_FILE = "ExuTalkTests/ExuTalkTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		79275C06198BE235004D4CC6 /* Build configuration list for PBXNativeTarget "ExuTalkLogicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79275C04198BE235004D4CC6 /* Debug */,
+				79275C05198BE235004D4CC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		79A73E371972F411009E5A6F /* Build configuration list for PBXProject "ExuTalk" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2482,15 +2500,6 @@
 			buildConfigurations = (
 				79A73E6F1972F411009E5A6F /* Debug */,
 				79A73E701972F411009E5A6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79A73E711972F411009E5A6F /* Build configuration list for PBXNativeTarget "ExuTalkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79A73E721972F411009E5A6F /* Debug */,
-				79A73E731972F411009E5A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

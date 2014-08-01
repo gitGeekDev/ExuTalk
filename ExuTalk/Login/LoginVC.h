@@ -12,4 +12,5 @@ extern NSString *const kXMPPmyPassword;
 
 @interface LoginVC : BaseVC
 +(instancetype)instantiateFromStoryboard;
+-(void)login;
 @end

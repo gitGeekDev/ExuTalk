@@ -167,7 +167,7 @@
 
 -(BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString{
     NSManagedObjectContext *moc = [theAppDelegate managedObjectContext_roster];
-    NSString *predicateFormat = @"%K BEGINSWITH[cd] %@";
+    NSString *predicateFormat = @"%K BEGINSWITH[cd] %@";;
     NSString *searchAttribute = @"displayName";
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:predicateFormat, searchAttribute, searchString];

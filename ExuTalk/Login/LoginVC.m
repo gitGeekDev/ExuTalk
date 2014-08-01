@@ -80,8 +80,6 @@ NSString *const kXMPPmyPassword = @"kXMPPmyPassword";
 @implementation LoginVC
 
 -(void)login{
-
-    
     if ([theAppDelegate connect])
 	{
         self.title  = [[[theAppDelegate xmppStream] myJID] bare];
