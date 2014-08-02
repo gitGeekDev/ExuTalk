@@ -460,6 +460,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
 	DDLogVerbose(@"%@: %@", THIS_FILE, THIS_METHOD);
+    application.applicationIconBadgeNumber = 0;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -580,6 +581,13 @@
     [storage archiveMessage:message outgoing:isOutgoing xmppStream:xmppStream];
 }
 
+-(void) incrementOneBadge{
+    NSInteger numberOfBadges = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    numberOfBadges +=1;
+    
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber:numberOfBadges];
+}
+
 - (void)xmppStream:(XMPPStream *)sender didReceiveMessage:(XMPPMessage *)message
 {
 	DDLogVerbose(@"%@: %@", THIS_FILE, THIS_METHOD);
@@ -620,7 +628,9 @@
             NSString *strname   =   m[@"sender"] ? m[@"sender"] :m[@"senderEmail"];
             localNotification.alertBody = [NSString stringWithFormat:@"%@:%@",strname,msg];   //[user displayName]
             localNotification.soundName = UILocalNotificationDefaultSoundName;
-            localNotification.applicationIconBadgeNumber=1; // increment
+//            localNotification.applicationIconBadgeNumber=1; // increment
+            
+            [self incrementOneBadge];
             
             NSDictionary *infoDict = [NSDictionary dictionaryWithObject:m forKey:@"notificationMessageObject"];
             localNotification.userInfo = infoDict;
