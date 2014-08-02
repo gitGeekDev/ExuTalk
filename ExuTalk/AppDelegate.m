@@ -71,28 +71,12 @@
 }
 
 -(void)showLoginScreen{
-    //    if (!self.window) {
-    //        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    //    }
-    //
-    //    if (!self.loginVc) {
-    //        self.loginVc    =   [LoginVC instantiateFromStoryboard];
-    //    }
-    //
-    //    if (!self.navigationController) {
-    //        self.navigationController =   [[UINavigationController alloc] init];
-    //        [self.window setRootViewController:self.navigationController];
-    //        [self.navigationController setNavigationBarHidden:YES];
-    //    }
-    //    [self.navigationController presentViewController:self.loginVc
-    //                                            animated:YES
-    //                                          completion:nil];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kUserLoggedOut
-                                                        object:nil
-                                                      userInfo:nil];
-    
     [[NSUserDefaults standardUserDefaults] setValue:nil forKey:kXMPPmyJID];
 	[[NSUserDefaults standardUserDefaults] setValue:nil forKey:kXMPPmyPassword];
+
+    [[NSNotificationCenter defaultCenter] postNotificationName:kUserLoggedOut
+                                                        object:nil
+                                                      userInfo:nil];    
 }
 
 //- (void)showAlarm:(NSString *)text {
@@ -160,17 +144,6 @@
     // Setup the XMPP stream
     
 	[self setupStream];
-    
-    //    [self showConvScreen];
-    //
-    //    if (![self connect])
-    //	{
-    //		dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, 0.0 * NSEC_PER_SEC);
-    //		dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-    //            self.loginVc    =   [LoginVC instantiateFromStoryboard];
-    //			[self.navigationController presentViewController:self.loginVc animated:YES completion:NULL];
-    //		});
-    //	}
     
     XMPPMessageArchivingCoreDataStorage *xmppMessageArchivingStorage = [XMPPMessageArchivingCoreDataStorage sharedInstance];
     xmppMessageArchivingModule = [[XMPPMessageArchiving alloc] initWithMessageArchivingStorage:xmppMessageArchivingStorage];

@@ -7,10 +7,8 @@
 //
 
 #import "BaseVC.h"
-#import "LoginVC.h"
 
 @interface BaseVC ()
-@property   (nonatomic, strong) LoginVC *loginVc;
 
 @end
 
@@ -41,12 +39,12 @@
 }
 
 -(void)userLoggedOutOfSystem:(NSNotification*)notification{
-    if (!self.loginVc) {
-        self.loginVc    =   [LoginVC instantiateFromStoryboard];
-    }
-    [self.navigationController presentViewController:self.loginVc
-                                            animated:YES
-                                          completion:nil];
+//    if (!self.loginVc) {
+//        self.loginVc    =   [LoginVC instantiateFromStoryboard];
+//    }
+//    [self.navigationController presentViewController:self.loginVc
+//                                            animated:YES
+//                                          completion:nil];
 }
 
 - (void)didReceiveMemoryWarning
