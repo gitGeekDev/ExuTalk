@@ -32,16 +32,6 @@
             skipped = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "79A73E5B1972F411009E5A6F"
-               BuildableName = "ExuTalkTests.xctest"
-               BlueprintName = "ExuTalkTests"
-               ReferencedContainer = "container:ExuTalk.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "79275BF4198BE235004D4CC6"
                BuildableName = "ExuTalkLogicTests.xctest"
                BlueprintName = "ExuTalkLogicTests"
