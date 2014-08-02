@@ -2322,7 +2322,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					$SDKROOT/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "ExuTalkLogicTests/ExuTalkLogicTests-Info.plist";
+				INFOPLIST_FILE = "$(SDKROOT)/ExuTalkLogicTests/ExuTalkLogicTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -2346,7 +2346,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					$SDKROOT/usr/include/libxml2,
 				);
-				INFOPLIST_FILE = "ExuTalkLogicTests/ExuTalkLogicTests-Info.plist";
+				INFOPLIST_FILE = "$(SDKROOT)/ExuTalkLogicTests/ExuTalkLogicTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -2447,7 +2447,7 @@
 					"\"$(SRCROOT)AFNetworking 2.0\"",
 					"$(SRCROOT)",
 				);
-				INFOPLIST_FILE = "ExuTalk/ExuTalk-Info.plist";
+				INFOPLIST_FILE = "$(SDKROOT)/ExuTalk/ExuTalk-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)\"/**",
@@ -2478,7 +2478,7 @@
 					"\"$(SRCROOT)AFNetworking 2.0\"",
 					"$(SRCROOT)",
 				);
-				INFOPLIST_FILE = "ExuTalk/ExuTalk-Info.plist";
+				INFOPLIST_FILE = "$(SDKROOT)/ExuTalk/ExuTalk-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)\"/**",
