@@ -12,6 +12,8 @@
 		79275BF8198BE235004D4CC6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E431972F411009E5A6F /* UIKit.framework */; };
 		79275BFE198BE235004D4CC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79275BFC198BE235004D4CC6 /* InfoPlist.strings */; };
 		79275C08198BE5E6004D4CC6 /* LoginTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 79275C07198BE5E6004D4CC6 /* LoginTest.m */; };
+		79275C0A198CB69C004D4CC6 /* iOS_Development.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 79275C09198CB69C004D4CC6 /* iOS_Development.mobileprovision */; };
+		79275C0B198CB69C004D4CC6 /* iOS_Development.mobileprovision in Resources */ = {isa = PBXBuildFile; fileRef = 79275C09198CB69C004D4CC6 /* iOS_Development.mobileprovision */; };
 		79A73E401972F411009E5A6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E3F1972F411009E5A6F /* Foundation.framework */; };
 		79A73E421972F411009E5A6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E411972F411009E5A6F /* CoreGraphics.framework */; };
 		79A73E441972F411009E5A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A73E431972F411009E5A6F /* UIKit.framework */; };
@@ -269,6 +271,7 @@
 		79275BFD198BE235004D4CC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		79275C01198BE235004D4CC6 /* ExuTalkLogicTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExuTalkLogicTests-Prefix.pch"; sourceTree = "<group>"; };
 		79275C07198BE5E6004D4CC6 /* LoginTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginTest.m; sourceTree = "<group>"; };
+		79275C09198CB69C004D4CC6 /* iOS_Development.mobileprovision */ = {isa = PBXFileReference; lastKnownFileType = file; path = iOS_Development.mobileprovision; sourceTree = "<group>"; };
 		79A73E3C1972F411009E5A6F /* ExuTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExuTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79A73E3F1972F411009E5A6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79A73E411972F411009E5A6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -787,6 +790,7 @@
 		79A73E331972F411009E5A6F = {
 			isa = PBXGroup;
 			children = (
+				79275C09198CB69C004D4CC6 /* iOS_Development.mobileprovision */,
 				79A73E471972F411009E5A6F /* ExuTalk */,
 				79275BF9198BE235004D4CC6 /* ExuTalkLogicTests */,
 				79A73E3E1972F411009E5A6F /* Frameworks */,
@@ -2014,6 +2018,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79275BFE198BE235004D4CC6 /* InfoPlist.strings in Resources */,
+				79275C0B198CB69C004D4CC6 /* iOS_Development.mobileprovision in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2024,6 +2029,7 @@
 				79A73EB81972F4CA009E5A6F /* StartUp.storyboard in Resources */,
 				79A73E981972F49D009E5A6F /* settings.png in Resources */,
 				79A7456E1972F514009E5A6F /* README.txt in Resources */,
+				79275C0A198CB69C004D4CC6 /* iOS_Development.mobileprovision in Resources */,
 				79A73E941972F49D009E5A6F /* header_tile.png in Resources */,
 				79A73E911972F49D009E5A6F /* chats.png in Resources */,
 				79A73E8C1972F49D009E5A6F /* back.png in Resources */,
@@ -2485,6 +2491,7 @@
 				79275C05198BE235004D4CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79A73E371972F411009E5A6F /* Build configuration list for PBXProject "ExuTalk" */ = {
 			isa = XCConfigurationList;
